@@ -1,0 +1,63 @@
+.image_block {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    transform-origin: 0 0;
+    perspective: 500px;
+    overflow: hidden;
+}
+.image_block .layer1 {width: 100%;}
+.image_block .white{
+    background-color: white;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    /* transform: scale(0.9); */
+    transition: 0.4s;
+}
+.image_block .hearticon{
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.image_block .bigtext{
+    font-family: Segoe UI Light;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.image_block .smalltext{
+    font-family: Segoe UI Light;
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.image_block:hover .white{
+    opacity: 0.9;
+    transform: rotateY(10Deg);
+    left: -20px; 
+}
+.image_block:hover .hearticon{opacity: 1;}
+.image_block:hover .bigtext{
+    opacity: 1;
+    bottom: 75px;
+    transition-delay: 0.3s;
+}
+.image_block:hover .smalltext{
+    opacity: 1;
+    transition-delay: 0.3s;
+}

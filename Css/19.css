@@ -1,0 +1,73 @@
+.image_block {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-origin: 0 0;
+    perspective: 500px;
+    overflow: hidden;
+}
+.image_block .con1 {width: 290px;}
+.image_block .con2 {width: 290px;}
+.image_block .con3 {width: 290px;}
+.image_block .con4 {width: 290px;}
+.image_block .con5 {width: 290px;}
+.image_block .con6 {width: 290px;}
+.image_block .white{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 0.2px;
+    left: 10px;
+    opacity: 0;
+    /* transform: scale(0.9); */
+    transition: 0.4s;
+}
+.image_block .bigtext{
+    font-family: Segoe UI Light;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -150px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.image_block .smalltext{
+    font-family: Segoe UI Light;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -150px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.image_block:hover .white{
+    opacity: 0.9;
+    transform: none;
+    left: -20px; 
+}
+.image_block:hover .bigtext{
+    opacity: 1;
+    bottom: 75px;
+    transition-delay: 0.3s;
+}
+.image_block:hover .smalltext{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.bo {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-column-gap: 200px;
+    grid-row-gap: 200px;
+    width: 1000px;
+    margin: 20px auto;
+}
+.bo .image {
+    width: 150px;
+    height: 150px;
+}

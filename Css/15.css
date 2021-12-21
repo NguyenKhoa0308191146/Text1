@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0,0,0);
+}
+.menuTren {
+    width: 100%;
+    background-color: aqua;
+    border-bottom: 1px solix rgb(173, 173, 173);
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.menuTren > ul {
+    width: 1170px;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    /* justify-content: center; */  
+}
+.menuTren > ul li {
+    line-height: 40px;
+    flex-wrap: wrap;
+}
+.menuTren > ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #666;
+}
+._1item {
+    position: relative;
+}
+._1item .layer2 {
+    width: 200px;
+    background-color: rgb(224, 224, 222);
+    position: absolute;
+    top: 40px; left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+._1item .layer2 ul {
+    list-style: none;
+}
+._1item:hover > .layer2 {
+    visibility: visible;
+    opacity: 1;
+}
+._1item:hover > .layer1 {
+    background-color: rgb(192, 168, 1);
+    color: white;
+} 
+._1item > .layer2 li:hover {
+    background-color: rgb(192, 168, 1);
+}
+._1item > .layer2 a {
+    text-decoration: none;
+}
+._1item > .layer2 a:hover {
+    color: white;
+}

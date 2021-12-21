@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: azure;
+}
+.Menu {
+    width: 1373px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.Header {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Segoe UI;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.Header h2 {
+    width: 50%;
+    font-size: 15px;
+}
+.Header span {
+    width: 50%;
+    text-align: right;
+    font-size: 13px;
+}
+.Header span a {
+    text-decoration: none;
+}
+.MenuTren ul {
+    display: flex;
+    list-style: none;
+}
+.MenuTren ul li a {
+    text-decoration: none;
+    font-family: Segoe UI;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    display: block;
+}
+.MenuTren ul li a.active {
+    border-color: rgb(48, 48, 87);
+}
+.MenuTren ul li a :hover {
+    border-color: whitesmoke;
+}
+.Section {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.Section a.khoinho {
+    display: inline-flex;
+    width: 14.6%;
+    height: 32px;
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+    font-family: Segoe UI;
+    font-size: 13px;
+}
+.Section a.khoinho img.trai {
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+
+}
+.Section a.khoinho span.phai {
+    padding: 5px;
+}

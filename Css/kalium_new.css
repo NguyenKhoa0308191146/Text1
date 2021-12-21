@@ -1,0 +1,51 @@
+body{
+    background: white;
+  }
+  .manhinh{
+    width: 1170px;
+    margin: 0 auto;
+  }
+  figure {
+    width: 32%;
+    float: left;
+    margin: 0;
+  }
+  figcaption {width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+  figcaption span {
+    width: 80%;
+    margin: 15px 0;
+    padding-top: 100px;
+    font-family: "arial";
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  figcaption p {
+    width: 20%;
+    font-size: 18px;
+    text-align: right;
+    font-family: arial;
+    padding-top: 100px;
+    padding-right: 20px;
+  }
+  .sanpham {
+    position: relative;
+    height: 360px;
+    width: 450px;
+    margin: 10px auto 0;
+    color: #fff;
+  }
+  
+  .sanpham img {
+    position: absolute;
+    left: 0;
+    width: 360px;
+    height: 450px;
+    transition: 1s;
+  }
+  .sanpham img.img-front:hover{
+    opacity:0;
+    cursor: pointer;
+  }

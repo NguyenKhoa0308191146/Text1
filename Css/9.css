@@ -1,0 +1,16 @@
+ul.menuNgang {
+    list-style: none;
+    display: flex;
+    background-color: violet;
+}
+ul.menuNgang li {
+    margin-right: 10px;
+    border-right: 1px solid white;
+    font-family: 'Segoe UI';
+    padding-right: 10px;
+}
+ul.menuNgang li a {
+    text-decoration: none;
+    font-family: Segoe UI;
+    color: white;
+}
